@@ -203,8 +203,8 @@ footer {
 }
 
 #headshot {
-	height: 172px;
 	width: 259px;
+    height: auto;
 	margin: 5px 20px 0 0;
 	float: left;
 }
@@ -214,4 +214,132 @@ footer {
 	font-size: 10px;
 	line-height: 70px;
 	color: #cccccc;
+}
+
+/* Media Query for Desktop size layout */
+@media screen and (max-width: 980px) {
+    .full-width {
+        width: 640px;
+    }
+
+    section {
+        width: 400px;
+    }
+
+    aside {
+        width: 200px;
+    }
+
+    /* About Page changes*/
+    #headshot {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Project Page changes */
+    .project-display-left,
+    .project-display-right {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+/* Media Query for Tablet size layout */
+@media screen and (max-width: 768px) {
+    .full-width {
+        width: 600px;
+    }
+
+    section {
+        width: 100%;
+        float: none;
+        margin: 30px 0 0 0;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+        margin: 30px 0 125px 0;
+    }
+
+    .contact-img {
+        width: 75px;
+        height: auto;
+    }
+
+    /* About Page changes*/
+    #headshot {
+        width: 259px;
+        height: auto;
+        margin: 5px 20px 0 0;
+        float: left;
+    }
+
+    /* Project Page changes */
+    .project-display-left {
+        float: left;
+        width: 48%;
+    }
+
+    .project-display-right {
+        float: right;
+        width: 48%;
+    }
+}
+
+/* Media Query for Mobile size layout */
+@media screen and (max-width: 640px) {
+    .full-width {
+        width: 560px;
+    }
+
+    a {
+        margin: 0 10%;
+    }
+
+    section {
+        width: 100%;
+        float: none;
+        margin: 30px 0 0 0;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+        margin: 30px 0 125px 0;
+    }
+
+    #header-name {
+        float: none;
+        height: 70px;
+        width: 120%;
+        left: -10%;
+    }
+
+    #nav-bar {
+        float: none;
+    }
+
+    .sidebar-container {
+        line-height: 0px;
+    }
+
+    /* About Page changes*/
+    #headshot {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Project Page changes */
+    .project-display-left,
+    .project-display-right {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 }
